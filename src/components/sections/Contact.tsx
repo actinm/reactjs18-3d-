@@ -20,6 +20,7 @@ const emailjsConfig = {
 
 const Contact = () => {
   const [form, setForm] = useState(INITIAL_STATE);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | undefined
